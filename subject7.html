@@ -1,0 +1,195 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Class+ | Class Dashboard</title>
+
+<link rel="icon" href="logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#e0f2fe,#f8fbff,#eef4ff);
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    color:#0ea5e9;
+}
+
+.logo span{
+    color:#0b3a6a;
+}
+
+/* TITLE */
+.title{
+    text-align:center;
+    padding:30px 20px 10px;
+}
+
+.title h1{
+    font-size:42px;
+    color:#0b3a6a;
+    font-weight:800;
+}
+
+.title p{
+    color:#555;
+    margin-top:8px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:40px 8%;
+}
+
+/* CARD */
+.card{
+    background:rgba(255,255,255,0.75);
+    backdrop-filter:blur(12px);
+    border-radius:22px;
+    padding:25px;
+    text-align:center;
+    text-decoration:none;
+    color:#0b3a6a;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+/* glow */
+.card::before{
+    content:"";
+    position:absolute;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    background:radial-gradient(circle, rgba(14,165,233,0.15), transparent 60%);
+    transform:rotate(25deg);
+}
+
+/* hover */
+.card:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* ICON */
+.icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* TEXT */
+.card h2{
+    font-size:22px;
+    margin-bottom:5px;
+}
+
+.card p{
+    font-size:14px;
+    color:#666;
+}
+
+/* COLORS */
+.math{border-left:6px solid #0ea5e9;}
+.science{border-left:6px solid #22c55e;}
+.english{border-left:6px solid #f59e0b;}
+.sst{border-left:6px solid #ef4444;}
+.computer{border-left:6px solid #a855f7;}
+.gk{border-left:6px solid #14b8a6;}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0ea5e9;
+    color:white;
+    margin-top:30px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .title h1{
+        font-size:30px;
+    }
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">Class<span>+</span></div>
+</header>
+
+<!-- TITLE -->
+<div class="title">
+    <h1> Class 7 </h1>
+    <p>Select subject to start learning</p>
+</div>
+
+<!-- SUBJECT GRID -->
+<section class="grid">
+
+    <a href="maths7.html" class="card math">
+        <div class="icon">📘</div>
+        <h2>Mathematics</h2>
+        <p></p>
+    </a>
+
+    <a href="science7.html" class="card science">
+        <div class="icon">🔬</div>
+        <h2>Science</h2>
+        <p></p>
+    </a>
+
+    
+    </a>
+
+    <a href="sst7.html" class="card sst">
+        <div class="icon">🌍</div>
+        <h2>Social Science</h2>
+        <p></p>
+    
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Class+ | Learn Smart, Grow Fast
+</footer>
+
+</body>
+</html>
